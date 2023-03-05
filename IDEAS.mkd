@@ -22,12 +22,16 @@ canvas动态的布局控件 [结合ItemsControl在Canvas中动态添加控件的
 |--|--|--|--|
 |roslyn|https://github.com/dotnet/roslyn|17.1k|上星期|
 
-
-我用nuget安装的，是 [https://github.com/dotnet/roslyn-analyzers](https://github.com/dotnet/roslyn-analyzers)，架构方面，我打算用net6.0，一个长期支持的架构。  
-我用的是“NET Compiler Platform SDK”，我会尽量用成熟的框架来做这个程序，比如wpf的mvvm，比如这个语法分析，协议要求是可以支持我的Apache协议，我保留版权。  
+我打算用net6.0，一个长期支持的架构，关于语法分析，我用的是“NET Compiler Platform SDK”，我会尽量用成熟的框架来做这个程序，比如wpf的mvvm，比如这个语法分析，协议要求是可以支持我的Apache协议，我保留版权。  
 还有这个虽说目标是给不懂编程的人用的，但是，也要预留接口给强大的企业应用，包括保密之类的，这个会在抽象的层次上给出接口。
 核心思路是语法树，我有写过lisp（scheme），基本上是编写语法树。
-
+教程来源于： [.NET Compiler Platform SDK](https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/)  
+但这教程实在是简略，我整理一下
+   - SyntaxTree tree = CSharpSyntaxTree.ParseText(programText);   // 这个是语法树
+   - CompilationUnitSyntax root = tree.GetCompilationUnitRoot();  // 获得的根节点
+   - foreach (SyntaxNode? item in root.ChildNodes())                      // ChildNodes是取得所有的子节点。
+   - SyntaxNode ： 语法的节点，
+     - 
 
 
 
