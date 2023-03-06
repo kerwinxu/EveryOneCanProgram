@@ -1,3 +1,5 @@
+# 2023-3-6
+今天创建了一个空白的wpf项目，net6平台的，要支持多语言。
 # 2023-3-4
 我再次整理一下需求，我需要做到如下的
    - 图形编程
@@ -26,12 +28,28 @@ canvas动态的布局控件 [结合ItemsControl在Canvas中动态添加控件的
 还有这个虽说目标是给不懂编程的人用的，但是，也要预留接口给强大的企业应用，包括保密之类的，这个会在抽象的层次上给出接口。
 核心思路是语法树，我有写过lisp（scheme），基本上是编写语法树。
 教程来源于： [.NET Compiler Platform SDK](https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/)  
-但这教程实在是简略，我整理一下
+但这教程实在是简略，我整理一下,我这里只是做精简版的，毕竟目标不是专业人士。   
+既然是精简版的，可以支持如下的  
+
+
    - SyntaxTree tree = CSharpSyntaxTree.ParseText(programText);   // 这个是语法树
    - CompilationUnitSyntax root = tree.GetCompilationUnitRoot();  // 获得的根节点
    - foreach (SyntaxNode? item in root.ChildNodes())                      // ChildNodes是取得所有的子节点。
-   - SyntaxNode ： 语法的节点，
-     - 
+   - SyntaxNode ： 语法的节点，感觉这个是词法的。
+     - 重要属性
+       - FullSpan ：此节点的绝对跨度（以字符为单位，包括其前导和尾随琐事）
+       - Parent   ： 在其集合中包含此节点的 ChildNodes() 节点。
+       - KindText ： 表示语法树中的非终端节点
+         - UsingDirective ： 这个是using语句
+         - NamespaceDeclaration ： 定义空间的
+         - ClassDeclaration     ： 这个表示这个是一个类
+           - Members ： 成员
+             - PropertyDeclaration  ： 属性
+             - MethodDeclaration    ： 方法
+     - 重要方法
+       - ChildNodes() ： 获取前缀文档顺序中的子节点的列表。
+       - ChildTokens() ： 获取此节点的直接子令牌的列表。
+       - 
 
 
 
