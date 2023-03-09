@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="180mm"
+   height="100mm"
+   viewBox="0 0 180 100"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="foreach.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.93539562"
+     inkscape:cx="422.28122"
+     inkscape:cy="250.16153"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect111"
+       width="168.01715"
+       height="87.968575"
+       x="8.485714"
+       y="9.6171427" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.876526;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect113"
+       width="125.71204"
+       height="71.686333"
+       x="50.569695"
+       y="25.678263" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="86.554291"
+       y="57.985718"
+       id="text169"><tspan
+         sodipodi:role="line"
+         id="tspan167"
+         style="stroke-width:0.264583"
+         x="86.554291"
+         y="57.985718">语句</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="10.182857"
+       y="57.420002"
+       id="text331"><tspan
+         sodipodi:role="line"
+         id="tspan329"
+         style="stroke-width:0.264583"
+         x="10.182857"
+         y="57.420002">foreach</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="51.762856"
+       y="22.345715"
+       id="text335"><tspan
+         sodipodi:role="line"
+         id="tspan333"
+         style="stroke-width:0.264583"
+         x="51.762856"
+         y="22.345715">类型</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="78.634285"
+       y="21.779999"
+       id="text339"><tspan
+         sodipodi:role="line"
+         id="tspan337"
+         style="stroke-width:0.264583"
+         x="78.634285"
+         y="21.779999">变量名</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="120.49714"
+       y="21.497143"
+       id="text343"><tspan
+         sodipodi:role="line"
+         id="tspan341"
+         style="stroke-width:0.264583"
+         x="120.49714"
+         y="21.497143">in</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="140.58"
+       y="20.931429"
+       id="text347"><tspan
+         sodipodi:role="line"
+         id="tspan345"
+         style="stroke-width:0.264583"
+         x="140.58"
+         y="20.931429">集合</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect349"
+       width="0.28285715"
+       height="18.668571"
+       x="49.782856"
+       y="9.3342857" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect351"
+       width="0.84857142"
+       height="15.274285"
+       x="75.239998"
+       y="9.9000006" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect353"
+       width="0.84857142"
+       height="15.84"
+       x="114.27428"
+       y="9.6171427" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect355"
+       width="0.28285715"
+       height="15.557142"
+       x="134.92287"
+       y="9.9000006" />
+  </g>
+</svg>

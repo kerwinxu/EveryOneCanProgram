@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="205mm"
+   height="135mm"
+   viewBox="0 0 205 135"
+   version="1.1"
+   id="svg404"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="class.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview406"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.3228492"
+     inkscape:cx="308.42518"
+     inkscape:cy="282.72309"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs401" />
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect413"
+       width="198.41013"
+       height="125.60641"
+       x="3.2001631"
+       y="6.0003061" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect415"
+       width="199.61018"
+       height="0.80004078"
+       x="2.8001428"
+       y="25.201286" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect417"
+       width="196.81004"
+       height="0.40002039"
+       x="3.2001631"
+       y="76.803917" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="89.604568"
+       y="19.601"
+       id="text421"><tspan
+         sodipodi:role="line"
+         id="tspan419"
+         style="stroke-width:0.264583"
+         x="89.604568"
+         y="19.601">类名</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="18.668571"
+       y="36.488571"
+       id="text434"><tspan
+         sodipodi:role="line"
+         id="tspan432"
+         style="stroke-width:0.264583"
+         x="18.668571"
+         y="36.488571">+ Left : int</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="18.968863"
+       y="49.768341"
+       id="text434-7"><tspan
+         sodipodi:role="line"
+         id="tspan432-7"
+         style="stroke-width:0.264583"
+         x="18.968863"
+         y="49.768341">+ Top : int</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="20.042654"
+       y="90.065735"
+       id="text482"><tspan
+         sodipodi:role="line"
+         id="tspan480"
+         style="stroke-width:0.264583"
+         x="20.042654"
+         y="90.065735">+add(int, int):int </tspan></text>
+  </g>
+</svg>

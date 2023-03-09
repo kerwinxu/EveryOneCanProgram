@@ -1,0 +1,120 @@
+这个是要支持的语法的路线图
+
+
+# v0.1 
+首先我想一下，最低限度的是多少，放在吧v0.1版本，比如类，就放在v0.2版本，在v0.1版本中，手下要支持各种值类型，比如整数浮点数之类的，流程图是用来写函数的。  
+
+我从这里得到参考如下   
+   - [https://gist.github.com/arslancharyev31/c48d18d8f917ffe217a0e23eb3535957](https://gist.github.com/arslancharyev31/c48d18d8f917ffe217a0e23eb3535957)
+   - [http://www.cs.man.ac.uk/~pjj/bnf/c_syntax.bnf](http://www.cs.man.ac.uk/~pjj/bnf/c_syntax.bnf) 
+   - [EBNF Syntax: C++ (ISO/IEC 14882:1998(E))](https://www.externsoft.ch/download/cpp-iso.html)
+但其实我的要精简的多。我这里先写一下精简到什么程度吧。
+总体上把握，我想要尽量少的语法。  
+总体上，程序是语句的集合，然后语句中由分成多种，然后细分成表达式，最后细分成简单数据类型。
+
+```
+
+
+```
+
+流程图包括如下的  
+   - if else
+   - for
+   - foreach
+   - while
+   - do
+   - class
+
+我这里选择用N-S图来做，为了做这个图，我重新安装了mingw-w64-x86_64-inkscape，再次画图。  
+
+## 顺序执行
+![顺序执行](resource/img/sequence.svg)
+## 条件执行
+![条件执行](resource/img/condition.svg)
+## 多分枝选择执行
+![多条件执行](resource/img/mult_case_condition.svg)
+## while循环
+![while](resource/img/while.svg)
+## do循环
+![do](resource/img/do.svg)
+## for循环
+![for](resource/img/for.svg)
+## foreach循环
+![foreach](resource/img/foreach.svg)
+
+## 类
+![class](resource/img/class.svg)
+
+## 连接线
+因为我用N-S图，里边几乎没箭头了，所以这里的箭头通常是分成2类，一种是uml中的箭头,这种没有实际的操作，一种是函数编程中数据流向的，我打算是两根箭头，并且这种会实际的发送数据。
+### 关联
+一个类是另一个类的属性  
+实线箭头  
+​```mermaid
+classDiagram
+   class C1
+   C1 : C2 theC2
+   class C2
+   C1 --> C2​```  
+### 依赖
+一个类是另一个类的函数的参数  
+虚线箭头  
+​```mermaid
+classDiagram
+   class C1
+   C1 : fun(C2)
+   class C2
+   C1 ..> C2```
+
+### 组合
+被组合的类不会单独存在  
+空心的菱形+箭头 
+​```mermaid
+classDiagram
+   class C1
+   C1 : C2 theC2
+   class C2
+   C1 --* C2​```
+### 聚合
+被聚合的类可以单独存在
+​```mermaid
+classDiagram
+   class C1
+   C1 : C2 theC2
+   class C2
+   C1 --o C2​```
+### 继承
+字面意思  
+三角箭头
+​```mermaid
+classDiagram
+   class C1
+   class C2
+   C1 --|> C2​```
+### 实现
+类似继承，不过是实现接口
+​```mermaid
+classDiagram
+   class C1
+   class C2
+   C1 ..|> C2​```
+
+### 数据传输  
+我这个打算先看一下powershell的接口，然后再做相关的处理。  
+$\Rightarrow$
+
+
+## 类的作用域
+   - \+ public
+   - \- private
+   - \# protected
+   - ~ package/internal
+   - 在()后追加
+      - \* 抽象
+      - \$ 静态
+
+
+
+
+
+

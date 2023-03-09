@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="180mm"
+   height="100mm"
+   viewBox="0 0 180 100"
+   version="1.1"
+   id="svg1516"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="for.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1518"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.93539562"
+     inkscape:cx="359.2063"
+     inkscape:cy="252.29966"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1513" />
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect1520"
+       width="172.8257"
+       height="89.100006"
+       x="4.8085713"
+       y="6.7885714" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect1522"
+       width="150.48"
+       height="73.825714"
+       x="26.871428"
+       y="21.779999" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="7.9200001"
+       y="57.420002"
+       id="text1526"><tspan
+         sodipodi:role="line"
+         id="tspan1524"
+         style="stroke-width:0.264583"
+         x="7.9200001"
+         y="57.420002">for</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="89.66571"
+       y="57.420002"
+       id="text1530"><tspan
+         sodipodi:role="line"
+         id="tspan1528"
+         style="stroke-width:0.264583"
+         x="89.66571"
+         y="57.420002">语句</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect1532"
+       width="0.28285715"
+       height="15.274285"
+       x="27.154285"
+       y="6.5057139" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="29.134283"
+       y="18.102856"
+       id="text1536"><tspan
+         sodipodi:role="line"
+         id="tspan1534"
+         style="stroke-width:0.264583"
+         x="29.134283"
+         y="18.102856">初始化</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="75.805717"
+       y="18.102856"
+       id="text1540"><tspan
+         sodipodi:role="line"
+         id="tspan1538"
+         style="stroke-width:0.264583"
+         x="75.805717"
+         y="18.102856">循环条件</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="125.02285"
+       y="18.102856"
+       id="text1544"><tspan
+         sodipodi:role="line"
+         id="tspan1542"
+         style="stroke-width:0.264583"
+         x="125.02285"
+         y="18.102856">循环后执行</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect1546"
+       width="0.5657143"
+       height="15.84"
+       x="67.602859"
+       y="7.0714288" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers fill stroke"
+       id="rect1548"
+       width="0.5657143"
+       height="15.557142"
+       x="119.64857"
+       y="6.7885714" />
+  </g>
+</svg>
