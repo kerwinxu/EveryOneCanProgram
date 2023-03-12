@@ -8,9 +8,14 @@
    - [https://gist.github.com/arslancharyev31/c48d18d8f917ffe217a0e23eb3535957](https://gist.github.com/arslancharyev31/c48d18d8f917ffe217a0e23eb3535957)
    - [http://www.cs.man.ac.uk/~pjj/bnf/c_syntax.bnf](http://www.cs.man.ac.uk/~pjj/bnf/c_syntax.bnf) 
    - [EBNF Syntax: C++ (ISO/IEC 14882:1998(E))](https://www.externsoft.ch/download/cpp-iso.html)
-但其实我的要精简的多。我这里先写一下精简到什么程度吧。
+但其实我的要精简的多。我这里先写一下精简到什么程度吧,并且我也没看到c#的BNF语法，自己写一份精简版吧（那个微软啥的，给我发一份？）。  
 总体上把握，我想要尽量少的语法。  
-总体上，程序是语句的集合，然后语句中由分成多种，然后细分成表达式，最后细分成简单数据类型。
+总体上，程序是语句的集合，然后语句中由分成多种，然后细分成表达式，最后细分成简单数据类型，我这个BNF的划分，是直接对应实际的类的，然后用户是可以直接操作的。
+   - [BNF Index of JAVA language grammar](http://cui.unige.ch/isi/bnf/JAVA/BNFindex.html)
+
+我根据这个java的，完成c#的吧。
+
+
 
 ```
 

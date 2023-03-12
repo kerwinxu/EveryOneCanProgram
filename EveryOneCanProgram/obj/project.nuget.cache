@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gk0YQCe7KIUgB2/mx/0SGGC0y3V4S6dq4uJOS69BqcQuutsgcP5ODK77i1GNw9F2ERU77Iqbq4HiLeQ4bBx4ew==",
+  "dgSpecHash": "ELY7c+Lwg8I8NYwEhgtjzwPkdtVxwGPxHZqr2sK9rePWtA3u5mFK29TP1tMZnuCmOngItvmk6Q/io6iTFPFZgQ==",
   "success": true,
-  "projectFilePath": "E:\\onedrive\\project\\EveryOneCanProgram\\EveryOneCanProgram\\EveryOneCanProgram\\EveryOneCanProgram.csproj",
+  "projectFilePath": "E:\\onedrive\\project\\EveryOneCanProgram\\EveryOneCanProgram\\EveryOneCanProgram.csproj",
   "expectedPackageFiles": [
     "E:\\nuget\\packages\\communitytoolkit.mvvm\\8.1.0\\communitytoolkit.mvvm.8.1.0.nupkg.sha512",
     "E:\\nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",

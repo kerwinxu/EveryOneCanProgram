@@ -1,0 +1,420 @@
+#  函数声明,declarator是函数，compound-statement是函数体，
+function-definition ::= {type-specifier}* declarator '(' {declaration}* ')' compound-statement
+#  类型说明符
+type-specifier ::= void
+                   | char
+                   | short
+                   | int
+                   | long
+                   | float
+                   | double
+                   | signed
+                   | unsigned
+                   | className
+
+#  声明，一个或者多个
+declaration ::=  {type-specifier}+ {init-declarator}*          
+#   声明初始化，这里可以等于某个值
+init-declarator ::= declarator
+                    | declarator '=' initializer
+#  初始化的值
+initializer ::= assignment-expression
+                | '{' initializer-list '}'
+                | '{' initializer-list ',' '}'
+
+#  条件表达式
+conditional-expression ::= logical-or-expression
+                           | logical-or-expression '?' expression ':' conditional-expression
+#  逻辑与
+logical-or-expression ::= logical-and-expression
+                          | logical-or-expression '||' logical-and-expression
+#  逻辑或
+logical-and-expression ::= inclusive-or-expression
+                           | logical-and-expression '&&' inclusive-or-expression
+#  位或
+inclusive-or-expression ::= exclusive-or-expression
+                            | inclusive-or-expression '|' exclusive-or-expression
+#  异或
+exclusive-or-expression ::= and-expression
+                            | exclusive-or-expression '^' and-expression
+#  位与
+and-expression ::= equality-expression
+                   | and-expression '&' equality-expression
+#  相等判断
+equality-expression ::= relational-expression
+                        | equality-expression '==' relational-expression
+                        | equality-expression '!=' relational-expression
+#  大小判断
+relational-expression ::= shift-expression
+                          | relational-expression '<' shift-expression
+                          | relational-expression '>' shift-expression
+                          | relational-expression '<=' shift-expression
+                          | relational-expression '>=' shift-expression
+#  位移标傲世
+shift-expression ::= additive-expression
+                     | shift-expression '<<' additive-expression
+                     | shift-expression '>>' additive-expression
+#  加减
+additive-expression ::= multiplicative-expression
+                        | additive-expression '+' multiplicative-expression
+                        | additive-expression '-' multiplicative-expression
+#  乘除
+multiplicative-expression ::= cast-expression
+                              | multiplicative-expression '*' cast-expression
+                              | multiplicative-expression '/' cast-expression
+                              | multiplicative-expression '%' cast-expression
+#  强制转换
+cast-expression ::= unary-expression
+                    | '(' type-name ')' cast-expression
+#  一元表达式
+unary-expression ::= postfix-expression
+                     | '++' unary-expression
+                     | '--' unary-expression
+                     | unary-operator cast-expression
+                     | sizeof unary-expression
+                     | sizeof type-name
+#  后缀表达式
+postfix-expression ::= primary-expression
+                       | postfix-expression '[' expression ']'
+                       | postfix-expression '(' {assignment-expression}* ')'
+                       | postfix-expression '.' identifier
+                       | postfix-expression '->' identifier
+                       | postfix-expression '++'
+                       | postfix-expression '--'
+#  主要的表达式
+primary-expression ::= identifier
+                       | constant
+                       | string
+                       | '(' expression ')'
+#  常量
+constant ::= integer-constant
+             | character-constant
+             | floating-constant
+             | enumeration-constant
+#  表达式
+expression ::= assignment-expression
+               | expression ',' assignment-expression
+
+#  赋值语句
+assignment-expression ::= conditional-expression
+                          | unary-expression assignment-operator assignment-expression
+# 赋值运算符
+assignment-operator ::= '='
+                        | '*='
+                        | '/='
+                        | '%='
+                        | '+='
+                        | '-='
+                        | '<<='
+                        | '>>='
+                        | '&='
+                        | '^='
+                        | '|='
+
+unary-operator ::= '&'
+                   | '*'
+                   | '+'
+                   | '-'
+                   | '~'
+                   | '!'
+
+#  复合语句,包括若干声明以及若干语句
+compound-statement ::= '{' {declaration}* {statement}* '}'
+type-name ::= {type-specifier}+
+
+declarator ::= {pointer}? direct-declarator
+
+#  函数
+direct-declarator ::= identifier                                        #  函数名
+                      | direct-declarator '(' parameter-type-list ')'   #  参数类型列表
+#  参数类型列表
+parameter-type-list ::= parameter-list                        
+                        | parameter-list ',' '...'
+#  参数列表
+parameter-list ::= parameter-declaration
+                   | parameter-list ',' parameter-declaration
+
+parameter-declaration ::= {type-specifier}+ declarator
+
+labeled-statement ::= case constant-expression ':' statement
+                      | default ':' statement
+
+#  表达式语句
+expression-statement ::= {expression}? ';'
+
+#  条件语句
+selection-statement ::= if '(' expression ')' statement
+                        | if '(' expression ')' statement else statement
+                        | switch '(' expression ')' statement
+
+#  循环语句
+iteration-statement ::= while '(' expression ')' statement
+                        | do statement while '(' expression ')' ';'
+                        | for '(' {expression}? ';' {expression}? ';' {expression}? ')' statement
+
+#  跳转语句
+jump-statement ::= goto identifier ';'
+                   | continue ';'
+                   | break ';'
+                   | return {expression}? ';'
+# 类声明
+class_declaration ::= { modifier } "class" identifier 
+                    [":" class_name]                            # 继承类
+                    [":" interface_name {"," interface_name}]   # 继承接口
+                    "{" { field_declaration } "}"               # 字段声明
+
+
+
+# 标识符
+identifier 
+      ::= "a..z,$,_" { "a..z,$,_,0..9,unicode character over 00C0" } 
+# 类名
+class_name 
+      ::= 
+      identifier                             # 可以是一个标识符名称
+      | ( package_name "." identifier )      # 有包名
+# 接口名称，规范是类似类名
+interface_name 
+      ::= 
+      identifier 
+      | ( package_name "." identifier ) 
+# 包名
+package_name 
+      ::= 
+      identifier 
+      | ( package_name "." identifier ) 
+# 字段声明
+field_declaration 
+      ::= 
+      ( [ doc_comment ] ( method_declaration 
+      | constructor_declaration 
+      | variable_declaration ) ) 
+      | static_initializer 
+      | ";" 
+# 文档注释，c#的好像不是这样的
+doc_comment 
+      ::= "/**" "... text ..." "*/" 
+# 方法声明
+method_declaration 
+      ::= 
+      { modifier } type identifier             # 依次是，修饰语，类型，标识符，
+      "(" [ parameter_list ] ")" { "[" "]" }    # 参数列表
+      ( statement_block | ";" )                 # 语句块或者分号结束
+
+# 修饰符
+modifier 
+      ::= 
+      "public" 
+      | "private" 
+      | "protected" 
+      | "static" 
+      | "final" 
+      | "abstract" 
+      | "internal"
+# 类型
+type 
+      ::= 
+      type_specifier { "[" "]" } 
+# 类型规范
+type_specifier 
+      ::= 
+      "bool" 
+      | "byte" 
+      | "sbyte" 
+      | "char" 
+      | "short"
+      | "ushort"  
+      | "int" 
+      | "uint" 
+      | "long" 
+      | "ulong" 
+      | "float"
+      | "double" 
+      | "decimal"
+      | class_name 
+      | interface_name 
+# 参数列表，就是一个一个的参数
+parameter_list 
+      ::= 
+      parameter { "," parameter } 
+# 而每一个参数是，类型，标识符和是否是数字
+parameter 
+      ::= 
+      type identifier { "[" "]" } 
+# 语句块，
+statement_block 
+      ::= "{" { statement } "}" 
+# 每一个语句
+statement 
+      ::= 
+      variable_declaration        # 变量声明
+      | ( expression ";" )        # 表达式
+      | ( statement_block )       # 语句块
+      | ( if_statement )          # if语句
+      | ( do_statement )          # do语句
+      | ( while_statement )       # while语句
+      | ( for_statement )         # for语句
+      | ( foreach_statement )     # foreach语句
+      | ( try_statement )         # try语句
+      | ( switch_statement )      # switch语句
+      | ( "return" [ expression ] ";" )      # return语句
+      | ( "throw" expression ";" )           # 发出异常语句
+      # | ( identifier ":" statement )         # 我不想这个存在，类似goto的。
+      # | ( "break" [ identifier ] ";" )       # break语句
+      # | ( "continue" [ identifier ] ";" )    # continue语句
+      | ( "break" ";" )       # break语句
+      | ( "continue"  ";" )    # continue语句
+      | ( ";" )                              # 单个分号也是一个语句
+# 变量声明
+variable_declaration 
+      ::= 
+      { modifier } type variable_declarator  # 修饰符+类型+变量说明符
+      { "," variable_declarator } ";" 
+# 变量说明符
+variable_declarator 
+      ::= 
+      identifier { "[" "]" } [ "=" variable_initializer ]  # 标识符，或许加上是否是数组，可选的是初始值。
+# 变量初始值
+variable_initializer 
+      ::= 
+      expression                                        # 初始值可以是表达式
+      | ( "{" [ variable_initializer                    # 也可以初始数组
+      { "," variable_initializer } [ "," ] ] "}" ) 
+# 表达式分为如下
+expression 
+      ::= 
+      numeric_expression      # 算数表达式
+      | testing_expression    # 比较表达式
+      | logical_expression    # 逻辑表达式
+      | string_expression     # 字符串表达式
+      | bit_expression        # 移位表达式
+      | casting_expression    # 强制转换表达式
+      | creating_expression   # 创建对象表达式
+      | literal_expression    # 字面表达式
+      | "null" 
+      | "super" 
+      | "this" 
+      | identifier                # 标识符
+      | ( "(" expression ")" ) 
+      | ( expression 
+      ( ( "(" [ arglist ] ")" ) 
+      | ( "[" expression "]" ) 
+      | ( "." expression ) 
+      | ( "," expression ) 
+      | ( "instanceof" ( class_name | interface_name ) ) 
+      ) ) 
+# 算数表达式
+numeric_expression 
+      ::= 
+      ( ( "-" 
+      | "++" 
+      | "--" ) 
+      expression ) 
+      | ( expression 
+      ( "++" 
+      | "--" ) ) 
+      | ( expression 
+      ( "+" 
+      | "+=" 
+      | "-" 
+      | "-=" 
+      | "*" 
+      | "*=" 
+      | "/" 
+      | "/=" 
+      | "%" 
+      | "%=" ) 
+      expression ) 
+# 比较表达式
+testing_expression 
+      ::= 
+      ( expression 
+      ( ">" 
+      | "<" 
+      | ">=" 
+      | "<=" 
+      | "==" 
+      | "!=" ) 
+      expression ) 
+# 逻辑表达式
+logical_expression 
+      ::= 
+      ( "!" expression ) 
+      | ( expression 
+      ( "ampersand" 
+      | "ampersand=" 
+      | "|" 
+      | "|=" 
+      | "^" 
+      | "^=" 
+      | ( "ampersand" "ampersand" ) 
+      | "||=" 
+      | "%" 
+      | "%=" ) 
+      expression ) 
+      | ( expression "?" expression ":" expression ) 
+      | "true" 
+      | "false" 
+# 字符串表达式
+string_expression 
+      ::= ( expression 
+      ( "+" 
+      | "+=" ) 
+      expression ) 
+# 移位表达式
+bit_expression 
+      ::= 
+      ( "~" expression ) 
+      | ( expression 
+      ( ">>=" 
+      | "<<" 
+      | ">>" 
+      | ">>>" ) 
+      expression ) 
+# 转换表达式
+casting_expression 
+      ::= 
+      "(" type ")" expression 
+# 创建对象表达式
+creating_expression 
+      ::= 
+      "new" ( ( classe_name "(" [ arglist ] ")" ) 
+      | ( type_specifier [ "[" expression "]" ] { "[" "]" } ) 
+      | ( "(" expression ")" ) ) 
+# 字面表达式
+literal_expression 
+      ::= 
+      integer_literal   # 字面的整数
+      | float_literal   # 浮点数
+      | string          # 字符串
+      | character       # 字符
+# 条件语句
+if_statement 
+      ::= 
+      "if" "(" expression ")" statement 
+      [ "else" statement ] 
+# do语句
+do_statement 
+      ::= 
+      "do" statement "while" "(" expression ")" ";" 
+# while语句
+while_statement 
+      ::= 
+      "while" "(" expression ")" statement 
+# switch语句
+switch_statement 
+      ::= 
+      "switch" "(" expression ")" "{" 
+      { ( "case" expression ":" ) 
+      | ( "default" ":" ) 
+      | statement } 
+      "}" 
+# using语句
+using_statement 
+      ::= 
+      "using" ( ( package_name "." "*" ";" ) 
+      | ( class_name | interface_name ) ) ";"
+# 参数列表
+arglist 
+      ::= 
+      expression { "," expression } 

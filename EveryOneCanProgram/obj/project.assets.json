@@ -156,11 +156,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\onedrive\\project\\EveryOneCanProgram\\EveryOneCanProgram\\EveryOneCanProgram\\EveryOneCanProgram.csproj",
+      "projectUniqueName": "E:\\onedrive\\project\\EveryOneCanProgram\\EveryOneCanProgram\\EveryOneCanProgram.csproj",
       "projectName": "EveryOneCanProgram",
-      "projectPath": "E:\\onedrive\\project\\EveryOneCanProgram\\EveryOneCanProgram\\EveryOneCanProgram\\EveryOneCanProgram.csproj",
+      "projectPath": "E:\\onedrive\\project\\EveryOneCanProgram\\EveryOneCanProgram\\EveryOneCanProgram.csproj",
       "packagesPath": "E:\\nuget\\packages",
-      "outputPath": "E:\\onedrive\\project\\EveryOneCanProgram\\EveryOneCanProgram\\EveryOneCanProgram\\obj\\",
+      "outputPath": "E:\\onedrive\\project\\EveryOneCanProgram\\EveryOneCanProgram\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kerwin\\AppData\\Roaming\\NuGet\\NuGet.Config",
